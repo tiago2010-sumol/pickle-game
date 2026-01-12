@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pickle Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card box">
+    <h2>Pickle Bank</h2>
+    <p>Welcome, <strong id="userDisplay"></strong></p>
+    <h3>Balance: <span id="balance">0</span> Coins</h3>
+    <button class="green" onclick="addCoins()">Earn 10 Coins</button>
+    <button class="dark" onclick="goRoulette()">Go to Roulette</button>
+    <button class="dark" onclick="goShop()">Go to Shop</button>
+    <button class="red" onclick="logout()">Logout</button>
+</div>
+
+<!-- Login Modal -->
+<div id="loginModal">
+    <div id="loginContent">
+        <h2>Login / Register</h2>
+        <input id="username" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button class="green" onclick="login()">Login / Register</button>
+        <p id="loginMessage" style="color:red; margin-top:10px;"></p>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
