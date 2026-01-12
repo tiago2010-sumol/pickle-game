@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pickle Roulette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="pointer"></div>
+<div class="wheel" id="wheel"></div>
+
+<div class="card box">
+    <p>Balance: <strong><span id="balance">0</span></strong></p>
+
+    <input id="bet" type="number" placeholder="Bet amount">
+    <button class="gold" onclick="allIn()">ALL IN</button>
+    <button class="red" onclick="spin('red')">Bet Red</button>
+    <button class="dark" onclick="spin('black')">Bet Black</button>
+
+    <p id="result"></p>
+    <button onclick="back()">Back</button>
+</div>
+
+<audio id="spinSound" src="https://cdn.pixabay.com/download/audio/2023/03/02/audio_0f25d5d54b.mp3"></audio>
+<audio id="winSound" src="https://cdn.pixabay.com/download/audio/2022/10/19/audio_51b02a56f5.mp3"></audio>
+<audio id="loseSound" src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_57fd1d0c2a.mp3"></audio>
+
+<script src="roulette.js"></script>
+</body>
+</html>
